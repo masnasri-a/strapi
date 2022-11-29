@@ -24,11 +24,14 @@ module.exports = ({ env }) => ({
       xsmall: 64,
     },
   },
+  seo: {
+    enabled: true,
+  },
   meilisearch: {
     config: {
-      host: "http://localhost:7700",
+      host: "http://103.176.79.228:7700",
       apiKey: "MASTER_KEY",
-    }
+    },
   },
   "fuzzy-search": {
     enabled: true,

@@ -15,9 +15,6 @@
     "title": {
       "type": "string"
     },
-    "pubDate": {
-      "type": "string"
-    },
     "dc_creator": {
       "type": "string"
     },
@@ -38,7 +35,8 @@
       "type": "string"
     },
     "views": {
-      "type": "integer"
+      "type": "integer",
+      "default": 0
     },
     "sub_category": {
       "type": "relation",
@@ -51,6 +49,24 @@
     },
     "subcategory": {
       "type": "string"
+    },
+    "pubDate": {
+      "type": "datetime"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "Banner": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
