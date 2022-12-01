@@ -24,8 +24,9 @@ module.exports = ({ env }) => ({
       xsmall: 64,
     },
   },
-  seo: {
+  "seo": {
     enabled: true,
+    // resolve: "./src/plugins/seo"
   },
   meilisearch: {
     config: {
